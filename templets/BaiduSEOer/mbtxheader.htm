@@ -36,53 +36,39 @@
 </div>
 </div>
 
-<SCRIPT src="{dede:global.cfg_templets_skin/}/mobantianxia/images/jquery.featureList-1.0.0.js" 
-type=text/javascript></SCRIPT>
-
-<SCRIPT src="{dede:global.cfg_templets_skin/}/mobantianxia/images/kxbdSuperMarquee.js" 
-type=text/javascript></SCRIPT>
-
-<SCRIPT type=text/javascript>
-
-function tencent_wpa(uuu,gh,g_corp,useqq,newpop)
-{
-var g_noHeader = true;
-var g_noFooter = true;
-var g_vsWidth = "570px";
-var g_vsHWidth = "644px";
-}
-
-$(document).ready(function() {
-
-$.featureList(
-$("#banner_current li a"),
-$("#output li"), {
-start_item	:	0
-}
-);			
-$('#customer-list').kxbdSuperMarquee({
-//isMarquee:true,
-//duration:20,
- 				isEqual:false,
-distance:22,
-time:1,
-direction:'up'
-});
-$('#news-list').kxbdSuperMarquee({
-isEqual:false,
-distance:16,
-time:2,
-//btnGo:{up:'#goU',down:'#goD'},
-direction:'up'
-});
-
-
-});	
-</SCRIPT>
-
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/demo/css/css.css" type="text/css" media="all">
+<SCRIPT src="{dede:global.cfg_templets_skin/}/mobantianxia/images/kxbdSuperMarquee.js" type=text/javascript></SCRIPT>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/demo/js/jquery.nbspSlider.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#slider1").nbspSlider({
+			widths:         '960px',        // 幻灯片宽度
+			heights:        '300px',		// 幻灯片高度
+			autoplay:       1,              // 是否自动播放幻灯片(1为是0为否)
+			delays:         4000,           // 自动播放--间隔(毫秒)
+			prevId: 		'prevBtn',      // 上一张幻灯片按钮ID
+			nextId: 		'nextBtn',		// 下一张幻灯片按钮ID
+			effect:	        'fade',   // horizontal、vertical、fade、none == 特效：横向、竖向、淡出、无特效
+			speeds: 		1000,			// 幻灯片切换的速度(毫秒)
+			altOpa:         0.5,            // ALT区块透明度
+			altBgColor:     '#ccc',  		// ALT区块背景颜色
+			altHeight:      '40px',  		// ALT区块高度
+			altShow:         1,				// ALT区块是否显示(1为是0为否)
+			altFontColor:    '#111',        // ALT区块内的字体颜色
+			starEndNoEff: 	  0,            // 开始与结束中间无动画效果(1为是0为否)
+			preNexBtnShow:    1,            // 是否显示上一张下一张按钮
+			numBtnSty:        'rectangle',	    // num、square、circle、roundness、rectangle == 数字、正方形、圆圈、圆形、长方形
+			numBtnShow:       1             // 是否显示按钮
+                });
+	});
+</script>
 
 <!-- 中部开始 -->
-<DIV id=banner>
-{dede:mytag name='huandeng' ismake='yes ' /}
-  
-</DIV>
+
+<div id="slider1" style="margin-bottom: 10px;">
+    <ul>
+        <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templets_skin/}/demo/images/01.jpg" alt="1111111111" /></a></li>
+        <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templets_skin/}/demo/images/02.jpg" alt="22222222222" /></a></li>
+        <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templets_skin/}/demo/images/03.jpg" alt="333333333333" /></a></li>
+    </ul>
+</div>

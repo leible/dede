@@ -17,13 +17,13 @@ html {min-width: 962px;}
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
 dl, dt, dd, ul, ol, li,
 pre,
-form, fieldset, legend, button, input, textarea, 
+form, fieldset, legend, button, input, textarea,
 th, td
 {margin:0px;padding:0px;}
 fieldset, img {border:0;}
 li {list-style:none;}
 body,button, input, select, textarea /* for ie */ {font: 12px;}
-address, cite, dfn, em, var { font-style: normal; } 
+address, cite, dfn, em, var { font-style: normal; }
 code, kbd,samp { font-family: courier new, courier, monospace; }
 
 ins {text-decoration:none;}
@@ -44,7 +44,7 @@ abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help;}
 
 body {
 margin: 0px;
-padding: 0px; 
+padding: 0px;
 border: 0px;
 color: #2f2f2f;
 font-size:12px;
@@ -68,7 +68,7 @@ a:hover{color:#3399FF;text-decoration: underline;}
 .clear {clear:both;}
 
 /*定义页面顶部样式top，包含logo和topmenu两个层*/
-#logo {float:left;width:330px;height:54px;background:url(logo.png) no-repeat 10px 8px !important; 
+#logo {float:left;width:330px;height:54px;background:url(logo.png) no-repeat 10px 8px !important;
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
@@ -83,7 +83,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 
 /*顶部导航*/
 
-#top_nav {clear:both;width:942px;height:36px;line-height:26px;padding:8px 10px 4px 5px;;background:url(nav_bg.png) !important; 
+#top_nav {clear:both;width:942px;height:36px;line-height:26px;padding:8px 10px 4px 5px;;background:url(nav_bg.png) !important;
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
@@ -153,11 +153,11 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 .main {width:960px;margin:0px auto;padding:0px auto;}
 .about {line-height:46px;}
 .copy {height:68px;padding-top:10px;background:#194586;}
-.copy ul {float:right;width:600px;}
+.copy ul {margin: 10px auto;width:600px;text-align: center;}
 .copy ul li {clear:both;}
-#foot_box .box,#foot_box .products_box {float:left;*width:260px;width:258px;margin:5px;line-height:24px;} 
+#foot_box .box,#foot_box .products_box {float:left;*width:260px;width:258px;margin:5px;line-height:24px;}
 #foot_box .products_box {width:400px;}
-.foot_logo {float:left;width:330px;height:54px;background:url(logo.png) no-repeat 10px 8px !important; 
+.foot_logo {float:left;width:330px;height:54px;background:url(logo.png) no-repeat 10px 8px !important;
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
@@ -359,11 +359,11 @@ h1, h2, h3, h4, h5, h6 { font-size:1em; }
 /*购买表格*/
 .table{ width:100%; margin:10px auto 7px; font-size:12px; overflow:hidden; border:1px solid #DDD; border-collapse:collapse; }
 .table * td{ padding:0px 6px; border:1px solid #EEE; }
-.table thead * th{ background:#F5F5F5; border:1px solid #E3E3E3; padding:0px 6px; color:#999; } 
+.table thead * th{ background:#F5F5F5; border:1px solid #E3E3E3; padding:0px 6px; color:#999; }
 .table tbody * th{ text-align:left; background:#F5F5F5; border:1px solid #DDD; }
 .table tbody * th strong{ line-height:21px; text-indent:10px; color:#999; }
 .td1{ text-align:right; color:#666; }
-.td2,.td3,.td4,.td5,.td6,.td7,.td8,.td9{ text-align:center; } 
+.td2,.td3,.td4,.td5,.td6,.td7,.td8,.td9{ text-align:center; }
 .td5{ background:#F5F5F5; }
 .td6,.td7,.td8,.td9{ background:#F5F5F5; }
 .abctxt {padding:10px;}
@@ -692,7 +692,7 @@ html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabs li.active a
 /*=== tabs ===*/
 
 /*
-	* Required 
+	* Required
 */
 .loopedCarousel .container {height:157px; overflow:hidden; position:relative;  padding-bottom:19px;}
 .loopedCarousel .slides {position:absolute; top:0; left:0;}
@@ -703,7 +703,7 @@ html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabs li.active a
 	height:197px;
 	display:none;
 	color:#999;
-}	
+}
 
 .loopedCarousel .slides div dt {border:1px solid #E7E7E7;}
 .loopedCarousel .slides div dt a {display:block;height:110px;overflow:hidden;color:#999;}
@@ -728,7 +728,7 @@ width:170px;
 	}
 		.loopedCarousel .slides dl dd.last img {
 			float:right;
-			
+
 		}
 		.loopedCarousel .slides dl dd strong {
 		color:#666;
@@ -752,7 +752,7 @@ h2.extra-title span {padding-left:10px;color:#84A4CA;}
 	* Optional
 */
 .loopedCarousel { position:relative; clear:both; }
-.loopedCarousel ul.pagination { 
+.loopedCarousel ul.pagination {
 	float:right;
 	padding:10px 6px 0 0;
 }
