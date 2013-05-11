@@ -1,0 +1,148 @@
+<div id="body">
+<div id="main">
+<!-- 页头开始 -->
+<div id="topmenu">
+<a title="留言" href="plus/guestbook.php?lang=gb2312" target="_blank">留言</a>
+<a href="/member/index_do.php?fmdo=user&dopost=regnew" target="_blank" style="width:80px;">会员中心</a>
+    {dede:langlist}
+      <a href="[field:typeurl/]" title="[field:langname/]">[field:langname/]</a>
+    {/dede:langlist}
+<div class="tel">
+<h3></h3><h5>售前咨询：05363686308&nbsp;&nbsp;13583626308</h5>
+</div>
+</div>
+<!--
+在这里换logo
+<div id="logo"><a href="" title="模板天下"><span><h1></h1></span></a></div>
+-->
+<div class="clearall"></div>
+
+<div id="top_nav">
+<div id="nav">
+<div id="search">
+<form name="formsearch" action="{dede:global.cfg_phpurl/}/search.php" method="post">
+<input type='hidden' name='lang' value='{dede:handlang/}' />
+<input id="inputsearch" name="keyword" type="text" align="absmiple">
+<input type="submit" class="s_btn" align="absmiple" name="searchbt" value=" ">
+</form>
+</div>
+
+<ul id="menu">
+    <li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
+
+{dede:channel type='top'}
+<li><a href="[field:typelink/]" class="one"><span>[field:typename/]</span></a></li>
+{/dede:channel}
+
+<li><a title="交流论坛" href="http://dis.com" class="one bbs"></a></li></ul>
+</div>
+</div>
+<style type="text/css">
+/*=================幻灯片样式===================*/
+.sliderBtn { background:url("../images/btnico/sprite.png") no-repeat; cursor: pointer; height: 100px; position:relative; top:30%; z-index:100; width:45px;}
+#prevBtn { left:0; float:left;}
+#nextBtn { background-position:right top; right:0; float:right;}
+#btnList { height:25px; position:absolute; bottom:5px; padding:0 10px 0 10px;}
+/*===============数字按钮默认样式================*/
+.num { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#90EE90; float:right; border:1px solid #ccc; overflow:hidden;}
+.num_act { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#EEB422;float:right; border:1px solid #ccc; overflow:hidden;}
+.num_hover { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#FFAEB9;float:right; border:1px solid #ccc; overflow:hidden;}
+/*=====================↓↓↓幻灯片数字按钮扩展↓↓↓==================*/
+/* square */
+.square { width:11px; height:11px; float:right; background:#999; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_act { width:11px; height:11px; float:right; background:#ADD8E6; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_hover { width:11px; height:11px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* circle */
+.circle { width:12px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 0 no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_act { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -13px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_hover { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -26px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* roundness */
+.roundness { width:12px; height:12px; float:right; background:url(../images/btnico/roundness.png) no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_act { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -12px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_hover { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -24px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* rectangle */
+.rectangle { width:25px; height:10px; float:right; background:#D15FEE; cursor:pointer; margin-right:5px; opacity:0.7; overflow:hidden;}
+.rectangle_act { width:25px; height:10px; float:right; background:#CDCD00; cursor:pointer; margin-right:5px; overflow:hidden;}
+.rectangle_hover { width:25px; height:10px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+</style>
+<SCRIPT src="{dede:global.cfg_templeturl/}/mobantianxia/images/jquery.featureList-1.0.0.js" type=text/javascript></SCRIPT>
+<script type="text/javascript" src="{dede:global.cfg_templeturl/}/default/demo/js/jquery.nbspSlider.1.1.min.js"></script>
+<SCRIPT src="{dede:global.cfg_templeturl/}/mobantianxia/images/kxbdSuperMarquee.js" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+function tencent_wpa(uuu,gh,g_corp,useqq,newpop)
+{
+var g_noHeader = true;
+var g_noFooter = true;
+var g_vsWidth = "570px";
+var g_vsHWidth = "644px";
+}
+
+$(document).ready(function() {
+
+$.featureList(
+$("#banner_current li a"),
+$("#output li"), {
+start_item	:	0
+}
+);
+$('#customer-list').kxbdSuperMarquee({
+//isMarquee:true,
+//duration:20,
+ 				isEqual:false,
+distance:22,
+time:1,
+direction:'up'
+});
+$('#news-list').kxbdSuperMarquee({
+isEqual:false,
+distance:16,
+time:2,
+//btnGo:{up:'#goU',down:'#goD'},
+direction:'up'
+});
+
+
+});
+</SCRIPT>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#slider1").nbspSlider({
+			widths:         '960px',        // 幻灯片宽度
+			heights:        '300px',		// 幻灯片高度
+			autoplay:       1,              // 是否自动播放幻灯片(1为是0为否)
+			delays:         4000,           // 自动播放--间隔(毫秒)
+			prevId: 		'prevBtn',      // 上一张幻灯片按钮ID
+			nextId: 		'nextBtn',		// 下一张幻灯片按钮ID
+			effect:	        'fade',   // horizontal、vertical、fade、none == 特效：横向、竖向、淡出、无特效
+			speeds: 		100,			// 幻灯片切换的速度(毫秒)
+			altOpa:         0.5,            // ALT区块透明度
+			altBgColor:     '#ccc',  		// ALT区块背景颜色
+			altHeight:      '40px',  		// ALT区块高度
+			altShow:         1,				// ALT区块是否显示(1为是0为否)
+			altFontColor:    '#111',        // ALT区块内的字体颜色
+			starEndNoEff: 	  0,            // 开始与结束中间无动画效果(1为是0为否)
+			preNexBtnShow:    1,            // 是否显示上一张下一张按钮
+			numBtnSty:        'num',	    // num、square、circle、roundness、rectangle == 数字、正方形、圆圈、圆形、长方形
+			numBtnShow:       1             // 是否显示按钮
+                });
+
+	});
+</script>
+<!-- 中部开始 -->
+<!--<DIV id=banner>
+<script src='/plus/mytag_js.php?aid=1' language='javascript'></script>
+
+{dede:mylang eid='huandeng' /}
+</DIV>-->
+
+<div id="slider1">
+        <ul>
+                <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templeturl/}/default/demo/images/01.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templeturl/}/default/demo/images/02.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templeturl/}/default/demo/images/03.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templeturl/}/default/demo/images/04.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="{dede:global.cfg_templeturl/}/default/demo/images/05.jpg" alt="" /></a></li>
+        </ul>
+</div>

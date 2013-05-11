@@ -1,0 +1,88 @@
+<div id="body">
+<div id="main">
+<!-- 页头开始 -->
+<div id="topmenu">
+<a title="网站地图" href="#" target="_blank">网站地图</a>
+
+<a href="/member/index_do.php?fmdo=user&dopost=regnew" target="_blank" style="width:80px;">会员中心</a><a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>
+   <div class="tel">
+<h3></h3><h5></h5>
+</div>
+</div>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v2.jiathis.com/code_mini/jiathis_r.js?btn=r3.gif&uid=897155" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<div id="logo"><a href="" title="百优者-专业优化网站专家"><span><h1>百优者-专业优化网站专家</h1></span></a></div>
+
+<div class="clearall"></div>
+
+<div id="top_nav">
+<div id="nav">
+<div id="search">
+<form name="formsearch" action="{dede:field name='phpurl'/}/search.php" method="post">
+<input type='hidden' name='lang' value='{dede:handlang/}' />
+<input id="inputsearch" name="keyword" type="text" align="absmiple">
+<input type="submit" class="s_btn" align="absmiple" name="searchbt" value=" ">
+</form>
+</div>
+
+<ul id="menu">
+<li><a href="{dede:global.cfg_cmsurl/}/" class="one on">首页</a></li>
+{dede:channel type='top' row='6' <li><a href='~typelink~' ~rel~>~typename~</a></li>"}
+      	<li><a href='[field:typeurl/]' [field:rel/] class="one">[field:typename/]</a></li>
+      	{/dede:channel}
+
+<li><a title="交流论坛" href="http://www.baiduseoer.com/bbs.html/" class="one bbs"></a></li></ul>
+</div>
+</div>
+
+<SCRIPT src="{dede:global.cfg_templets_skin/}/mobantianxia/images/jquery.featureList-1.0.0.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="{dede:global.cfg_templets_skin/}/mobantianxia/images/kxbdSuperMarquee.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+function tencent_wpa(uuu,gh,g_corp,useqq,newpop)
+{
+var g_noHeader = true;
+var g_noFooter = true;
+var g_vsWidth = "570px";
+var g_vsHWidth = "644px";
+}
+
+$(document).ready(function() {
+
+$.featureList(
+$("#banner_current li a"),
+$("#output li"), {
+start_item	:	0
+}
+);			
+$('#customer-list').kxbdSuperMarquee({
+//isMarquee:true,
+//duration:20,
+ 				isEqual:false,
+distance:22,
+time:1,
+direction:'up'
+});
+$('#news-list').kxbdSuperMarquee({
+isEqual:false,
+distance:16,
+time:2,
+//btnGo:{up:'#goU',down:'#goD'},
+direction:'up'
+});
+
+
+});	
+</SCRIPT>
+
+
+<!-- 中部开始 -->
+<DIV id=banner>
+{dede:mytag name='huandeng' ismake='yes ' /}
+  
+</DIV>

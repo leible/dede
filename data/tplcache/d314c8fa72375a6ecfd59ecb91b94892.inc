@@ -1,0 +1,2 @@
+<div class="box"><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank"><img src="[field:litpic/]" width="120" height="120" alt="[field:fulltitle/]" /></a>
+<p><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></p></div>

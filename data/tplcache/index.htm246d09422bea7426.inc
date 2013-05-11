@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",254,280);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",324,354);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",391,418);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("global","",479,508);
+$z[3][4]['name']="cfg_templeturl";
+$z[4]=Array("global","",608,637);
+$z[4][4]['name']="cfg_templeturl";
+$z[5]=Array("global","",723,752);
+$z[5][4]['name']="cfg_templeturl";
+$z[6]=Array("global","",864,893);
+$z[6][4]['name']="cfg_templeturl";
+$z[7]=Array("global","",1098,1127);
+$z[7][4]['name']="cfg_templeturl";
+$z[8]=Array("include","",2322,2364);
+$z[8][4]['filename']="mbtxheader.htm";
+$z[9]=Array("lang","",3507,3524);
+$z[9][4]['name']="news";
+$z[10]=Array("arclist","\r\n<li><span>[field:pubdate function='strftime(\"%m-%d\",\"@me\")'/]</span><a href='[field:arcurl/]'>[field:global.autoindex/]、[field:title/]</a></li>\r\n",3601,3815);
+$z[10][4]['row']="5";
+$z[10][4]['titlelen']="60";
+$z[10][4]['channelid']="1";
+$z[11]=Array("lang","",3923,3946);
+$z[11][4]['name']="newproduct";
+$z[12]=Array("arclist","\r\n<div class=\"box\"><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\" target=\"_blank\"><img src=\"[field:litpic/]\" width=\"120\" height=\"120\" alt=\"[field:fulltitle/]\" /></a>\r\n<p><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:title/]</a></p></div>\r\n",4002,4326);
+$z[12][4]['channelid']="1";
+$z[12][4]['row']="5";
+$z[12][4]['titlelen']="22";
+$z[13]=Array("flink","\r\n<a href=\"[field:url/]\"><img src=\"[field:logo/]\" width=\"88\" height=\"31\" /></a>\r\n",4510,4638);
+$z[13][4]['row']="10";
+$z[13][4]['type']="image";
+$z[14]=Array("flink","\r\n<li><a href='[field:url/]'>[field:webname/]</a></li>\r\n",4669,4771);
+$z[14][4]['row']="20";
+$z[14][4]['type']="text";
+$z[15]=Array("include","",4879,4921);
+$z[15][4]['filename']="mbtxfooter.htm";
+
+?>

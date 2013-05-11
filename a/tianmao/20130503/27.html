@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>毕业照</title>
+<meta name="keywords" content="毕业,照,学生,毕业,照," />
+<meta name="description" content="学生毕业照" />
+<!-- 调用样式表 -->
+<link rel="stylesheet" href="/templets/mobantianxia/images/style.css" type="text/css" media="all">
+<!--[if IE 6]>
+<LINK media=all href="/templets/mobantianxia/images/ie6.css" type=text/css rel=stylesheet><![endif]-->
+<script src="/templets/mobantianxia/images/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/templets/mobantianxia/images/loopedcarousel.js"></script>
+<script type="text/javascript">
+$(function() {
+// carousel
+$('.loopedCarousel').loopedCarousel();
+});
+</script>
+
+<script type="text/javascript" src="/templets/mobantianxia/images/tabs.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script type="text/javascript">
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+}
+</script>
+<script language="javascript" type="text/javascript">
+<!-- 
+function ResumeError()  
+{ 
+    return true; 
+} 
+window.onerror = ResumeError; 
+function check()
+{
+if(document.search.keyword.value.length==0){
+     alert("请输入查询信息！");
+     document.search.keyword.focus();
+     return false;
+    }
+
+}
+// --> 
+
+
+// 导航下拉菜单
+
+$(function(){
+nav_curr();	   
+   
+//下拉菜单
+$("#menu > li:has(.subMenu)").hover(function(){
+//$("#menu > li > a").removeClass("hover");	
+$(this).find("a").eq(0).addClass("hover");
+$(this).find(".subMenu").stop(true,true).fadeIn(300);
+},function(){
+$(this).find("a").eq(0).removeClass("hover");
+$(this).find(".subMenu").stop(true,true).fadeOut(300);
+nav_curr();
+});		
+
+//导航当前项
+function nav_curr(){
+for(var i=0;i<5;i++){
+navText=$("#menu > li > a").eq(i).attr("title");	
+if(navText==navCurrent){
+$("#menu > li > a").eq(i).addClass("hover");
+}
+}
+}
+
+});
+
+var navCurrent="首页";
+</script>
+
+<style type="text/css">
+
+#banner{height:250px;}
+#info {margin:34px 20px 0px 0px;}
+#top_nav {padding:8px 10px 6px;}
+#right {background:none;}
+</style>
+
+</head>
+<body>
+<div id="body">
+<div id="main">
+<!-- 页头开始 -->
+<div id="topmenu">
+<a title="留言" href="plus/guestbook.php?lang=gb2312" target="_blank">留言</a>
+<a href="/member/index_do.php?fmdo=user&dopost=regnew" target="_blank" style="width:80px;">会员中心</a>
+    
+<div class="tel">
+<h3></h3><h5>售前咨询：05363686308&nbsp;&nbsp;13583626308</h5>
+</div>
+</div>
+<!--
+在这里换logo
+<div id="logo"><a href="" title="模板天下"><span><h1></h1></span></a></div>
+-->
+<div class="clearall"></div>
+
+<div id="top_nav">
+<div id="nav">
+<div id="search">
+<form name="formsearch" action="/plus/search.php" method="post">
+<input type='hidden' name='lang' value='' />
+<input id="inputsearch" name="keyword" type="text" align="absmiple">
+<input type="submit" class="s_btn" align="absmiple" name="searchbt" value=" ">
+</form>
+</div>
+
+<ul id="menu">
+    <li><a href='/'><span>主页</span></a></li>
+
+
+<li><a href="/a/taobao/" class="one"><span>每日分享</span></a></li>
+
+<li><a href="/a/jingdong/" class="one"><span>课程项目</span></a></li>
+
+<li><a href="/a/tianmao/" class="one"><span>教学资料</span></a></li>
+
+<li><a href="/a/yixun/" class="one"><span>人材招聘</span></a></li>
+
+
+<li><a title="交流论坛" href="http://dis.com" class="one bbs"></a></li></ul>
+</div>
+</div>
+<style type="text/css">
+/*=================幻灯片样式===================*/
+.sliderBtn { background:url("../images/btnico/sprite.png") no-repeat; cursor: pointer; height: 100px; position:relative; top:30%; z-index:100; width:45px;}
+#prevBtn { left:0; float:left;}
+#nextBtn { background-position:right top; right:0; float:right;}
+#btnList { height:25px; position:absolute; bottom:5px; padding:0 10px 0 10px;}
+/*===============数字按钮默认样式================*/
+.num { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#90EE90; float:right; border:1px solid #ccc; overflow:hidden;}
+.num_act { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#EEB422;float:right; border:1px solid #ccc; overflow:hidden;}
+.num_hover { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#FFAEB9;float:right; border:1px solid #ccc; overflow:hidden;}
+/*=====================↓↓↓幻灯片数字按钮扩展↓↓↓==================*/
+/* square */
+.square { width:11px; height:11px; float:right; background:#999; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_act { width:11px; height:11px; float:right; background:#ADD8E6; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_hover { width:11px; height:11px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* circle */
+.circle { width:12px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 0 no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_act { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -13px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_hover { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -26px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* roundness */
+.roundness { width:12px; height:12px; float:right; background:url(../images/btnico/roundness.png) no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_act { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -12px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_hover { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -24px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* rectangle */
+.rectangle { width:25px; height:10px; float:right; background:#D15FEE; cursor:pointer; margin-right:5px; opacity:0.7; overflow:hidden;}
+.rectangle_act { width:25px; height:10px; float:right; background:#CDCD00; cursor:pointer; margin-right:5px; overflow:hidden;}
+.rectangle_hover { width:25px; height:10px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+</style>
+<SCRIPT src="/templets/mobantianxia/images/jquery.featureList-1.0.0.js" type=text/javascript></SCRIPT>
+<script type="text/javascript" src="/templets/default/demo/js/jquery.nbspSlider.1.1.min.js"></script>
+<SCRIPT src="/templets/mobantianxia/images/kxbdSuperMarquee.js" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+function tencent_wpa(uuu,gh,g_corp,useqq,newpop)
+{
+var g_noHeader = true;
+var g_noFooter = true;
+var g_vsWidth = "570px";
+var g_vsHWidth = "644px";
+}
+
+$(document).ready(function() {
+
+$.featureList(
+$("#banner_current li a"),
+$("#output li"), {
+start_item	:	0
+}
+);
+$('#customer-list').kxbdSuperMarquee({
+//isMarquee:true,
+//duration:20,
+ 				isEqual:false,
+distance:22,
+time:1,
+direction:'up'
+});
+$('#news-list').kxbdSuperMarquee({
+isEqual:false,
+distance:16,
+time:2,
+//btnGo:{up:'#goU',down:'#goD'},
+direction:'up'
+});
+
+
+});
+</SCRIPT>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#slider1").nbspSlider({
+			widths:         '960px',        // 幻灯片宽度
+			heights:        '300px',		// 幻灯片高度
+			autoplay:       1,              // 是否自动播放幻灯片(1为是0为否)
+			delays:         4000,           // 自动播放--间隔(毫秒)
+			prevId: 		'prevBtn',      // 上一张幻灯片按钮ID
+			nextId: 		'nextBtn',		// 下一张幻灯片按钮ID
+			effect:	        'fade',   // horizontal、vertical、fade、none == 特效：横向、竖向、淡出、无特效
+			speeds: 		100,			// 幻灯片切换的速度(毫秒)
+			altOpa:         0.5,            // ALT区块透明度
+			altBgColor:     '#ccc',  		// ALT区块背景颜色
+			altHeight:      '40px',  		// ALT区块高度
+			altShow:         1,				// ALT区块是否显示(1为是0为否)
+			altFontColor:    '#111',        // ALT区块内的字体颜色
+			starEndNoEff: 	  0,            // 开始与结束中间无动画效果(1为是0为否)
+			preNexBtnShow:    1,            // 是否显示上一张下一张按钮
+			numBtnSty:        'num',	    // num、square、circle、roundness、rectangle == 数字、正方形、圆圈、圆形、长方形
+			numBtnShow:       1             // 是否显示按钮
+                });
+
+	});
+</script>
+<!-- 中部开始 -->
+<!--<DIV id=banner>
+<script src='/plus/mytag_js.php?aid=1' language='javascript'></script>
+
+
+</DIV>-->
+
+<div id="slider1">
+        <ul>
+                <li><a href="javascript:void(0);"><img src="/templets/default/demo/images/01.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="/templets/default/demo/images/02.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="/templets/default/demo/images/03.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="/templets/default/demo/images/04.jpg" alt="" /></a></li>
+                <li><a href="javascript:void(0);"><img src="/templets/default/demo/images/05.jpg" alt="" /></a></li>
+        </ul>
+</div>
+
+<div id="right" style="float:left;">
+
+<div class="blank10"></div>
+
+<div id="position">
+<strong>当前位置：</strong><a title="shipinjiaoyuwang.com" href="">shipinjiaoyuwang.com</a><a title="" href="/plus/list.php?tid=3">教学资料</a></div>
+<div id="text" class="text" style="width:680px;margin:15px;">
+
+<h1>毕业照</h1>
+<div class="contentinfo">：admin 　 ：2013-05-03 16:27　：<script src="/plus/count.php?view=yes&aid=27&mid=1" type='text/javascript' language="javascript"></script></div>
+
+<div id="content" style="width:680px;" class="text">
+
+<p>学生毕业照</p>
+</div>
+<div class="blank30"></div>
+
+<script language="JavaScript">
+function shutwin(){
+window.close();
+return;}
+</script>
+
+<div class="blank30"></div>
+<div id="tool">
+<ul>
+<li><a href="javascript:window.print()" class="print">打印本文</a></li>
+<li><a href="javascript:shutwin()" class="close">关闭本页</a></li>
+<li style="width:90px; padding-left:5px;"><a href='/plus/feedback.php?aid=27&lang=' class="t_4"></a></li>
+
+</ul>
+</div>
+<div class="blank30"></div>
+<a title="返回顶部" href="#" class="clear floatright"><img alt="返回顶部" src="http://a.mobantianxia.cn/templets/mobantianxia/images/gotop.gif"></a>
+<div class="blank30"></div>
+</div>
+
+
+</div>
+
+<div id="left" style="float:right;">
+<div style="padding-left:20px;">
+<div id="contact">
+
+
+<div class="blank10"></div><div class="blank10"></div>
+<div class="contact_info"><a href="/plus/list.php?tid=2">了解更多</a><a href="/plus/list.php?tid=8">高级服务</a><a href="http://bbs.mobantianxia.cn/">论坛讨论</a></div>
+</div>
+
+<div class="blank10"></div>
+<style>a.on {color:#22840B;font-weight:bold;}</style>
+<!--只展开当前栏目所在一级栏目下的分类-->
+<div class="left_title"><div class="i08"><div class="title"><a href="" title="">栏目导航：</a><span>Type</span></div></div></div>
+<div class="left_box">
+<div class="left_box_bg">
+<ul class="type_list"  id="about">
+
+           
+
+<!--左侧栏目导航结束-->
+</ul>
+<div class="clear"></div>
+</div>
+<div class="left_box_bt"></div>
+</div>
+<!--只展开当前栏目所在一级栏目下的分类-->
+
+<div class="blank10"></div>
+<div class="left_title"><div class="i08"><div class="title"><a href="/" title=""></a>
+<span>Hot</span></div></div></div>
+<div class="left_box">
+<div class="left_box_bg">
+<dl class="list">
+<dt><a href='/a/tianmao/20130503/28.html'>学院教学楼</a></dt>
+<dd><a href=""></a><span class="date" style="padding-left:10px;">05-03</span></dd>
+<dt><a href='/a/tianmao/20130503/27.html'>毕业照</a></dt>
+<dd><a href=""></a><span class="date" style="padding-left:10px;">05-03</span></dd>
+<dt><a href='/a/tianmao/20130503/26.html'>学院图书馆</a></dt>
+<dd><a href=""></a><span class="date" style="padding-left:10px;">05-03</span></dd>
+<dt><a href='/a/tianmao/20130424/5.html'>html表单中 GET与POST提交方法的区</a></dt>
+<dd><a href=""></a><span class="date" style="padding-left:10px;">04-24</span></dd>
+
+<!--
+<dt><span class="date" style="padding-left:10px; float:right">05-03</span><a href='/a/tianmao/20130503/28.html'>学院教学楼</a></dt>
+<dt><span class="date" style="padding-left:10px; float:right">05-03</span><a href='/a/tianmao/20130503/27.html'>毕业照</a></dt>
+<dt><span class="date" style="padding-left:10px; float:right">05-03</span><a href='/a/tianmao/20130503/26.html'>学院图书馆</a></dt>
+<dt><span class="date" style="padding-left:10px; float:right">04-24</span><a href='/a/tianmao/20130424/5.html'>html表单中 GET与POST提交方</a></dt>
+
+-->
+</dl>
+<div class="clear"></div>
+</div>
+<div class="left_box_bt"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+<script> 
+function resizeImg(obj)
+{ 
+var obj = document.getElementById(obj); 
+var objContent = obj.innerHTML;
+var imgs = obj.getElementsByTagName('img'); 
+if(imgs==null) return; 
+for(var i=0; i<imgs.length; i++) 
+{ 
+if(imgs[i].width>parseInt(obj.style.width)) 
+{ 
+imgs[i].width = parseInt(obj.style.width);
+} 
+} 
+} 
+window.onload = function() {resizeImg('content');
+} 
+</script>
+<div class="clear"></div>
+<div id="footer">
+<div class="main">
+<div class="about">
+ 
+</div>
+</div>
+<div class="copy">	
+<div class="main">
+<!--
+在这里换下低部的logo
+<div class="foot_logo"></div>
+-->
+<ul>
+
+<div style="padding-top: 20px">版权所有 © 振宇教育(Zhenyu Edocatlon)</div><br>
+http://zhenyujiaoyu.com
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<li class="list[field:global.autoindex/]"><span class="date">20[field:pubdate function='strftime("%y-%m-%d","@me")'/]</span><a title="[field:fulltitle/]" target="_blank" href="[field:arcurl/]">[field:title/]</a></li>

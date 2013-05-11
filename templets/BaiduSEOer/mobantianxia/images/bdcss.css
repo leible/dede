@@ -1,0 +1,91 @@
+#tags {
+width:960px; 
+height:48px; 
+margin:0 auto; 
+border:solid 1px #ddd;
+}
+#tags p {
+font-size:14px; 
+line-height:50px; 
+float:left; 
+margin:0 5px; 
+width:50px;
+}
+#tags ul {
+width:900px;
+float:right;
+overflow:hidden;
+}
+#tags ul li {
+list-style:none; 
+float:left;
+margin-right:5px;
+}
+#tags ul li a {
+line-height:50px;
+font-size:14px;
+}
+#m_container { 
+height:740px; 
+width:962px; 
+margin:0 auto; 
+overflow:hidden;
+}
+#m_content {
+width:660px; 
+height:740px; 
+float:left;
+}
+ .m_con_box {
+width:310px; 
+height:350px; 
+margin:20px 20px 0 0 ; 
+float:left;
+overflow:hidden;  
+}
+.m_con_box dt { 
+width:310px; 
+height:50px; 
+background:#ddd;
+}
+.m_con_box dt h2 { 
+float:left;
+width:30px;  
+font-size:14px;
+line-height:50px;
+}
+.m_con_box dt h2 a:hover {
+font-color:green;
+}
+.m_con_box dt span {
+float:right;
+font-size:12px;
+margin-right:5px;
+display:inline;
+}
+.m_con_box dd {
+width:308px; 
+height:299px;
+border:solid 0 1px 1px 1px #ddd;
+}
+.m_con_box dd ul li a:hover {font-color:green;}
+#m_container #m_sider { 
+width:302px; 
+height:740px; 
+float:right;
+}
+#m_container #m_sider #m_s_box1 {
+height:300px;
+width:300px;
+background:red;
+}
+#m_container #m_sider #m_s_box2 {
+height:140px;
+width:300px;
+background:blue;
+}
+#m_container #m_sider #m_s_box3 {
+height:300px;
+width:300px;
+background:orange;
+}
