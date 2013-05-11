@@ -227,8 +227,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 #banner {WIDTH: 960px; POSITION: relative; HEIGHT: 245px
 }
 /*首页Banner*/
-#banners {#banner {clear:both;height:320px;}
-}
+
 UL#banner_current {
 	Z-INDEX: 10; RIGHT: -7px; WIDTH: 273px; POSITION: absolute; TOP: 4px; HEIGHT: 241px
 }
