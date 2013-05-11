@@ -72,7 +72,7 @@ a:hover{color:#3399FF;text-decoration: underline;}
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/logo.png',sizingMethod='crop');}
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='logo.png',sizingMethod='crop');}
 #logo a {display:block;height: 100%;width: 100%;}
 #logo a span {display:none;}
 #topmenu {float:right;width:250px;}
@@ -87,7 +87,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/nav_bg.png',sizingMethod='crop');text-align:center;font-size:14px;}
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='nav_bg.png',sizingMethod='crop');text-align:center;font-size:14px;}
 #nav {clear:both;position:relative; z-index:90;width:942px;height:38px;}
 #nav ul li a.bbs {width:94px;background:url(bbs.gif) left 3px no-repeat;}
 #nav ul li a.bbs:hover {background:url(bbs_hover.gif) left 3px no-repeat;}
@@ -99,7 +99,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 #menu li a.hover {background:url(nav_a_hover.gif) center top no-repeat;color:white;}
 #menu .subMenu {position:absolute; display:none; height:35px; width:380px; z-index:80;overflow:hidden;}
 #menu .subMenu .menuleft,
-#menu .subMenu .menuright {background:url(http://a.mobantianxia.cn/templets/mobantianxia/images/nav_li_ul_bg.png); display:block; height:30px; float:left; line-height:30px;position:relative; z-index:90;}
+#menu .subMenu .menuright {background:url(nav_li_ul_bg.png); display:block; height:30px; float:left; line-height:30px;position:relative; z-index:90;}
 #menu .subMenu .menuleft { background-position:left top; width:10px;}
 #menu .subMenu .menuright { background-position:right top; padding-right:10px;}
 #menu .subMenu .menuright a {float:left; height:30px; padding:0; width:80px;position:relative; z-index:99;}
@@ -161,7 +161,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/logo.png',sizingMethod='crop');}
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='logo.png',sizingMethod='crop');}
 #links a {
   padding:2px;
   white-space: nowrap;
@@ -182,7 +182,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobanti
 .left_title {height:38px;background:url(left_title_bg.png) left top no-repeat;/*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/left_title_bg.png',sizingMethod='crop');}
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='left_title_bg.png',sizingMethod='crop');}
 .left_title .title {height:22px;padding:5px 0px;}
 .i08 {height:38px;padding-left:40px;background:url(icon08.gif) 6px 1px no-repeat;}
 .i09 {height:38px;padding-left:40px;background:url(icon09.gif) 6px 1px no-repeat;}
@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 { font-size:1em; }
 .type_list li {height:30px;line-height:30px;background:url(type_list.png) left center no-repeat;/*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
-_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/type_list.png',sizingMethod='crop');font-size:14px;}
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='type_list.png',sizingMethod='crop');font-size:14px;}
 .type_list a {display:block;height:30px;line-height:30px;padding-left:30px;background:url(liens.gif) 10px center no-repeat;position:relative;}
 
 

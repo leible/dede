@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,24 +8,24 @@
 
 如下-{dede:global.cfg_webname/}</title>
 <!-- 调用样式表 -->
-<link rel="stylesheet" 
+<link rel="stylesheet"
 
-href="{dede:global.cfg_templets_skin/}/mobantianxia/images/style.css" 
+href="{dede:global.cfg_templets_skin/}/mobantianxia/images/style.css"
 
 type="text/css" media="all">
 
 <!--[if IE 6]>
-<LINK media=all 
+<LINK media=all
 
-href="{dede:global.cfg_templets_skin/}/mobantianxia/images/ie6.css" 
+href="{dede:global.cfg_templets_skin/}/mobantianxia/images/ie6.css"
 
 type=text/css rel=stylesheet><![endif]-->
-<script 
+<script
 
 src="{dede:global.cfg_templets_skin/}/templets/mobantianxia/images/jquery-
 
 1.3.2.min.js" type="text/javascript"></script>
-<script type="text/javascript" 
+<script type="text/javascript"
 
 src="{dede:global.cfg_templets_skin/}/mobantianxia/images/loopedcarousel.js"><
 
@@ -37,10 +37,10 @@ $('.loopedCarousel').loopedCarousel();
 });
 </script>
 
-<script type="text/javascript" 
+<script type="text/javascript"
 
 src="{dede:global.cfg_templets_skin/}/mobantianxia/images/tabs.js"></script>
-<script language="javascript" type="text/javascript" 
+<script language="javascript" type="text/javascript"
 
 src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
 
@@ -53,12 +53,12 @@ function CheckLogin(){
 }
 </script>
 <script language="javascript" type="text/javascript">
-<!-- 
-function ResumeError()  
-{ 
-    return true; 
-} 
-window.onerror = ResumeError; 
+<!--
+function ResumeError()
+{
+    return true;
+}
+window.onerror = ResumeError;
 function check()
 {
 if(document.search.keyword.value.length==0){
@@ -68,29 +68,29 @@ if(document.search.keyword.value.length==0){
     }
 
 }
-// --> 
+// -->
 
 
 // 导航下拉菜单
 
 $(function(){
-nav_curr();	   
-   
+nav_curr();
+
 //下拉菜单
 $("#menu > li:has(.subMenu)").hover(function(){
-//$("#menu > li > a").removeClass("hover");	
+//$("#menu > li > a").removeClass("hover");
 $(this).find("a").eq(0).addClass("hover");
 $(this).find(".subMenu").stop(true,true).fadeIn(300);
 },function(){
 $(this).find("a").eq(0).removeClass("hover");
 $(this).find(".subMenu").stop(true,true).fadeOut(300);
 nav_curr();
-});		
+});
 
 //导航当前项
 function nav_curr(){
 for(var i=0;i<5;i++){
-navText=$("#menu > li > a").eq(i).attr("title");	
+navText=$("#menu > li > a").eq(i).attr("title");
 if(navText==navCurrent){
 $("#menu > li > a").eq(i).addClass("hover");
 }
@@ -121,29 +121,29 @@ var navCurrent="首页";
 <font color="#FF0000">{dede:global name='keyword' function='RemoveXSS(@me)'/}
 
 </font></a></div>
- 
+
 <div id="text" class="text" style="width:680px;height:auto;margin-top:-5px;">
 <div id="content" style="width:680px;height:auto;margin-top:-5px;" class="text">
 
 <p>
 {dede:list perpage='4'}
 <div class="item">
-<h3><a href="[field:arcurl/]" 
+<h3><a href="[field:arcurl/]"
 target="_blank">[field:title/]</a></h3>
 <p class="intro">[field:description/]...</p>
-<p class="info"> <small>分类 : </small><span><a href="[field:typeurl/]" 
+<p class="info"> <small>分类 : </small><span><a href="[field:typeurl/]"
 
-target="_blank">[field:typename/]</a></span> <small>点击 : </small><span> 
+target="_blank">[field:typename/]</a></span> <small>点击 : </small><span>
 
 [field:click/]</span> <small>日期 : </small><span>[field:stime/]</span> </p>
-<p><span><a href="[field:arcurl/]" 
+<p><span><a href="[field:arcurl/]"
 target="_blank">[field:arcurl/]</a></span></p>
  </div>
 {/dede:list}
 
-<div class="paglist" style="margin:0 auto;width:960px;"> 
+<div class="paglist" style="margin:0 auto;width:960px;">
 <ul class="pagelist">
- {dede:pagelist listsize='4'/}  
+ {dede:pagelist listsize='4'/}
 </ul>
  </div>
 
@@ -152,7 +152,7 @@ target="_blank">[field:arcurl/]</a></span></p>
 </div>
 
 <div class="blank30"></div>
-<a title="返回顶部" href="#" class="clear floatright"><img alt="返回顶部" src="http://a.mobantianxia.cn/templets/mobantianxia/images/gotop.gif"></a>
+<a title="返回顶部" href="#" class="clear floatright"><img alt="返回顶部" src="{dede:global.cfg_templets_skin/}/mobantianxia/images/gotop.gif"></a>
 <div class="blank30"></div>
 </div>
 
