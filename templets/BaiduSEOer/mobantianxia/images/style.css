@@ -68,17 +68,17 @@ a:hover{color:#3399FF;text-decoration: underline;}
 .clear {clear:both;}
 
 /*定义页面顶部样式top，包含logo和topmenu两个层*/
-#logo {float:left;width:284px;height:98px;background:url(logo_baidu.png) no-repeat 0px 0px !important;
+#logo {float:left;width:284px;height:80px;background:url(logo_baidu.png) no-repeat 0px 0px !important;
 /*For Firefox*/
 *background:none;
 /*For IE7 & IE6*/
 _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://a.mobantianxia.cn/templets/mobantianxia/images/logo.png',sizingMethod='crop');}
 #logo a {display:block;height: 100%;width: 100%;}
 #logo a span {display:none;}
-#topmenu {float:right;width:268px;background:url(top_bg.gif) no-repeat left 2px;}
+#topmenu {float:right;width:250px;}
 #topmenu a {float:left;display:block;width:52px;padding-left:10px;color:white;}
-#topmenu .tel {clear:both;line-height:55px;color:white;}
-#topmenu .tel h5 {float:right;font-weight:normal;font-size:14px;padding-right:12px;}
+#topmenu .tel {clear:both;line-height:25px;color:white;}
+#topmenu .tel h5 {font-weight:normal;font-size:14px;padding-right:12px;}
 #topmenu .tel h3 {float:right;font-weight:normal;font-size:20px;}
 
 /*顶部导航*/
